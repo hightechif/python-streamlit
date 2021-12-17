@@ -1,15 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[5]:
-
-
-# Ujian Akhir Semester Pemrograman Komputer 
-# Nafisa Kautsar
-# 12220107
-
-# import module
-
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
@@ -18,13 +9,13 @@ import plotly.express as px
 import json
 import pandas as pd
 
-f = open('kode_negara_lengkap.json')
+f = open('country_code.json')
  
 # returns JSON object as
 # a dictionary
 data = json.load(f)
  
-df = pd.read_csv('produksi_minyak_mentah.csv')
+df = pd.read_csv('data.csv')
 negara=list()
 for x in df['kode_negara']:
     p=0
